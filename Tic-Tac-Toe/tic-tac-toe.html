@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="tic-tac-toe.css"/>
+    <title>Tic-Tac-Toe</title>
+</head>
+<body onload="startGame()">
+  <h1><font class="text">Tic-Tac-Toe!</font></h1><br>
+    <div id="message" class="text1">Result</div><!--text1 for styling purpose | message for displaying message (who wins)-->
+    <table class="shift">
+      <tr>
+        <td id="s1" class="square" onclick="nextMove(this);"></td>
+        <td id="s2" class="square" onclick="nextMove(this);"></td>
+        <td id="s3" class="square" onclick="nextMove(this);"></td>
+      </tr>
+      <tr>
+        <td id="s4" class="square" onclick="nextMove(this);"></td>
+        <td id="s5" class="square" onclick="nextMove(this);"></td>
+        <td id="s6" class="square" onclick="nextMove(this);"></td>
+      </tr>
+      <tr>
+        <td id="s7" class="square" onclick="nextMove(this);"></td>
+        <td id="s8" class="square" onclick="nextMove(this);"></td>
+        <td id="s9" class="square" onclick="nextMove(this);"></td>
+      </tr>
+    </table>
+    <button type="button" onclick="startGame()" class="but">Start New Game</button>
+    <script type="text/javascript" src="tic-tac-toe.js"></script>
+  </body>
+</html>
